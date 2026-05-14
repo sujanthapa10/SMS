@@ -31,9 +31,9 @@ http://localhost/SMS/
 
 ## Test Accounts
 
-| Role | Email | Password |
-| --- | --- | --- |
-| Admin | `admin@sms.com` | `admin123` |
+| Role    | Email             | Password     |
+| ------- | ----------------- | ------------ |
+| Admin   | `admin@sms.com`   | `admin123`   |
 | Teacher | `teacher@sms.com` | `teacher123` |
 | Student | `student@sms.com` | `student123` |
 
@@ -75,6 +75,7 @@ SMS/
 |   |-- header.php
 |   |-- navbar.php
 |   |-- sidebar.php
+|   |-- paths.php
 |   `-- footer.php
 |
 |-- database/
@@ -101,44 +102,44 @@ SMS/
 
 ### Public
 
-| File | Purpose |
-| --- | --- |
-| `index.php` | Landing page |
-| `login.php` | Role-based login |
-| `logout.php` | Session logout |
+| File         | Purpose          |
+| ------------ | ---------------- |
+| `index.php`  | Landing page     |
+| `login.php`  | Role-based login |
+| `logout.php` | Session logout   |
 
 ### Admin
 
-| File | Purpose |
-| --- | --- |
-| `admin/admin_dashboard.php` | Admin overview |
-| `admin/manage_admins.php` | Create, update, delete admin accounts |
-| `admin/manage_students.php` | Create, update, delete students |
-| `admin/manage_teachers.php` | Create, update, delete teachers |
-| `admin/manage_courses.php` | Manage units |
-| `admin/manage_semesters.php` | Manage academic semesters |
-| `admin/manage_classes.php` | Assign units to teachers and classes |
-| `admin/attendance_sheet.php` | Week 1-12 attendance sheet |
-| `admin/manage_grades.php` | Manage assessments and student grades |
-| `admin/manage_attendance.php` | Redirects to `attendance_sheet.php` |
+| File                          | Purpose                               |
+| ----------------------------- | ------------------------------------- |
+| `admin/admin_dashboard.php`   | Admin overview                        |
+| `admin/manage_admins.php`     | Create, update, delete admin accounts |
+| `admin/manage_students.php`   | Create, update, delete students       |
+| `admin/manage_teachers.php`   | Create, update, delete teachers       |
+| `admin/manage_courses.php`    | Manage units                          |
+| `admin/manage_semesters.php`  | Manage academic semesters             |
+| `admin/manage_classes.php`    | Assign units to teachers and classes  |
+| `admin/attendance_sheet.php`  | Week 1-12 attendance sheet            |
+| `admin/manage_grades.php`     | Manage assessments and student grades |
+| `admin/manage_attendance.php` | Redirects to `attendance_sheet.php`   |
 
 ### Teacher
 
-| File | Purpose |
-| --- | --- |
-| `teachers/teacher_dashboard.php` | Teacher overview |
-| `teachers/teacher_classes.php` | View assigned classes and students |
-| `teachers/teacher_attendance.php` | Mark attendance for own classes |
-| `teachers/teacher_grades.php` | Enter grades for own class students |
+| File                              | Purpose                             |
+| --------------------------------- | ----------------------------------- |
+| `teachers/teacher_dashboard.php`  | Teacher overview                    |
+| `teachers/teacher_classes.php`    | View assigned classes and students  |
+| `teachers/teacher_attendance.php` | Mark attendance for own classes     |
+| `teachers/teacher_grades.php`     | Enter grades for own class students |
 
 ### Student
 
-| File | Purpose |
-| --- | --- |
-| `students/student_dashboard.php` | Student overview |
-| `students/student_units.php` | View enrolled units and classes |
-| `students/student_attendance.php` | View week 1-12 attendance |
-| `students/student_grades.php` | View grades and pending assessments |
+| File                              | Purpose                             |
+| --------------------------------- | ----------------------------------- |
+| `students/student_dashboard.php`  | Student overview                    |
+| `students/student_units.php`      | View enrolled units and classes     |
+| `students/student_attendance.php` | View week 1-12 attendance           |
+| `students/student_grades.php`     | View grades and pending assessments |
 
 ## Database
 
@@ -159,18 +160,18 @@ $database = 'sms';
 
 Main tables:
 
-| Table | Purpose |
-| --- | --- |
-| `admins` | Admin login accounts |
-| `teachers` | Teacher accounts and profile data |
-| `students` | Student accounts and profile data |
-| `courses` | Units |
-| `semesters` | Academic semesters |
-| `classes` | Unit, teacher, semester, and room allocation |
-| `enrollments` | Student enrolment in units |
-| `attendance` | Week 1-12 attendance records |
-| `assessments` | Unit assessments, such as Assignment 1-4 |
-| `grades` | Student marks and grade letters |
+| Table         | Purpose                                      |
+| ------------- | -------------------------------------------- |
+| `admins`      | Admin login accounts                         |
+| `teachers`    | Teacher accounts and profile data            |
+| `students`    | Student accounts and profile data            |
+| `courses`     | Units                                        |
+| `semesters`   | Academic semesters                           |
+| `classes`     | Unit, teacher, semester, and room allocation |
+| `enrollments` | Student enrolment in units                   |
+| `attendance`  | Week 1-12 attendance records                 |
+| `assessments` | Unit assessments, such as Assignment 1-4     |
+| `grades`      | Student marks and grade letters              |
 
 ## Role Summary
 
